@@ -23,5 +23,5 @@ const Wrapper = styled.div`
 `
 
 const Label = styled.label`
-    margin-right: 16px;
+    margin-right: 24px;
 `
