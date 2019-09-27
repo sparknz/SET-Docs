@@ -1,0 +1,15 @@
+{
+  "name": "set-tokens-catalog",
+  "description": "",
+  "dependencies": {
+    "@sparknz/set-tokens": "^0.0.11",
+    "catalog": "^3.6.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "styled-components": "^4.4.0"
+  },
+  "scripts": {
+    "start": "catalog start",
+    "build": "catalog build"
+  }
+}
