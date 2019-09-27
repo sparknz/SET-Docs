@@ -13,7 +13,7 @@
   },
   "scripts": {
     "start": "catalog start",
-    "build": "catalog build",
+    "build": "catalog build --public-url '/SET-Docs'",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d catalog/build"
   },
