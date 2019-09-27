@@ -1,15 +1,20 @@
 {
   "name": "set-tokens-catalog",
   "description": "",
+  "homepage": "https://sparknz.github.io/SET-Docs/",
   "dependencies": {
-    "@sparknz/set-tokens": "^0.0.11",
+    "@sparknz/set-tokens": "^0.0.12",
     "catalog": "^3.6.0",
+    "gh-pages": "^2.1.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "styled-components": "^4.4.0"
   },
   "scripts": {
     "start": "catalog start",
-    "build": "catalog build"
-  }
+    "build": "catalog build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d catalog/build"
+  },
+  "version": "0.0.0"
 }
