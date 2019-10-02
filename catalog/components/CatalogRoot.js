@@ -56,7 +56,7 @@ export default function CatalogRoot({ currentTheme, jsTheme }) {
         {
           path: "/sizing/font",
           title: "Font",
-          imports: { font: getColorArray(currentTheme, 'font') },
+          imports: { font: getColorArray(currentTheme, 'font', 'label') },
           content: loader("sizing/font"),
         },
         {

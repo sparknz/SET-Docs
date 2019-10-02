@@ -2,6 +2,27 @@
 
 `yarn add @sparknz/set-tokens`
 
+# Consumption
+
+### Inline styling with nested json
+
+`import currentTheme from '@sparknz/set-tokens/dist/docs/<your heme name>.json'`
+
+```react
+showSource: true
+---
+<div
+    style={{
+        padding: currentTheme.size.spacing.default.md, 
+        backgroundColor: currentTheme.color.background.default.default,
+    }}
+
+>
+    <h2 style={{color: currentTheme.color.text.main1.default}}>Hello World 1</h2>
+    <h2 style={{color: currentTheme.color.text.main2.default}}>Hello World 2</h2>
+</div>
+```
+
 # File types 
 ### Scss
 `import from '@sparknz/set-tokens/dist/scss/pinkGreen_variables.scss'`
@@ -86,23 +107,4 @@ $color-background-alt-2-default: #000000;
       "alpha": 1
     },
 ...
-```
-
-# Consumption
-
-### Inline styling with nested json
-
-```react
-showSource: true
----
-<div
-    style={{
-        padding: currentTheme.size.spacing.default.md, 
-        backgroundColor: currentTheme.color.background.default.default,
-    }}
-
->
-    <h2 style={{color: currentTheme.color.main.default.default}}>Hello World 1</h2>
-    <h2 style={{color: currentTheme.color.main.alt1.default}}>Hello World 2</h2>
-</div>
 ```
