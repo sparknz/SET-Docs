@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/Cellar/node/12.10.0/bin/node /usr/local/Cellar/yarn/1.17.3/libexec/bin/yarn.js upgrade @sparknz/SET-tokens@latest
+  /usr/local/Cellar/node/12.10.0/bin/node /usr/local/Cellar/yarn/1.17.3/libexec/bin/yarn.js upgrade @sparnz/set-tokens@latest
 
 PATH: 
   /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
@@ -14,7 +14,7 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@sparknz%2fSET-tokens: Not found
+  Error: https://registry.yarnpkg.com/@sparnz%2fset-tokens: Not found
       at Request.params.callback [as _callback] (/usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:66830:18)
       at Request.self.callback (/usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:140464:22)
       at Request.emit (events.js:209:13)
@@ -33,7 +33,7 @@ npm manifest:
     "main": "catalog/index.js",
     "homepage": "https://sparknz.github.io/SET-Docs",
     "dependencies": {
-      "@sparknz/set-tokens": "^0.0.12",
+      "@sparknz/set-tokens": "^0.0.15",
       "catalog": "^3.6.0",
       "gh-pages": "^2.1.1",
       "react": "^16.9.0",
@@ -42,7 +42,7 @@ npm manifest:
     },
     "scripts": {
       "start": "catalog start",
-      "build": "catalog build",
+      "build": "catalog build --public-url '/SET-Docs'",
       "predeploy": "npm run build",
       "deploy": "gh-pages -d catalog/build"
     },
@@ -229,10 +229,10 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/@emotion/utils/-/utils-0.8.2.tgz#576ff7fb1230185b619a75d258cbc98f0867a8dc"
     integrity sha512-rLu3wcBWH4P5q1CGoSSH/i9hrXs7SlbRLkoq9IGuoPYNGQvDJ3pt/wmOM+XgYjIDRMVIdkUWt0RsfzF50JfnCw==
   
-  "@sparknz/set-tokens@^0.0.12":
-    version "0.0.12"
-    resolved "https://registry.yarnpkg.com/@sparknz/set-tokens/-/set-tokens-0.0.12.tgz#b1519464ed7e18f2c5549696a491e9fa99fc90a3"
-    integrity sha512-ILI49fBzkg1gqqjDsP3+jfdbQADNhyisWwqA6RoWZzHiz5KM7K//9dmFaolRwr42PQbMU2rxYUOQTU04YDbEyA==
+  "@sparknz/set-tokens@^0.0.15":
+    version "0.0.15"
+    resolved "https://registry.yarnpkg.com/@sparknz/set-tokens/-/set-tokens-0.0.15.tgz#d0d7e87785a5515f56a589ccb8c5dba5a0e94804"
+    integrity sha512-tjunrbwuJ1ZE+X3Ix4+ekHsHzEB3kdedE7TkShs36RphKgBrTZixUmUYsNuAjz0xsYNh6c8OxYogsoXjxsoX+w==
   
   abbrev@1:
     version "1.1.1"

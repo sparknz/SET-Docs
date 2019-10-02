@@ -4,7 +4,6 @@ export function getColorArray(colorObj, pickBy) {
 
 export function getBgTextBorderColorArray(themeObj) {
   const output = {
-      main: getColorArray(themeObj, 'color-main'),
       background: getColorArray(themeObj, 'color-background'),
       text: getColorArray(themeObj, 'color-text'),
       border: getColorArray(themeObj, 'color-border'),

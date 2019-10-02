@@ -1,8 +1,3 @@
-# Main color
-```color-palette|horizontal
-colors: !import main
-```
-
 # Background/Text/Border color
 ```color-palette
 span: 2
