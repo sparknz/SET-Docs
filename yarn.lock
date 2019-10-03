@@ -174,10 +174,10 @@
   resolved "https://registry.yarnpkg.com/@emotion/utils/-/utils-0.8.2.tgz#576ff7fb1230185b619a75d258cbc98f0867a8dc"
   integrity sha512-rLu3wcBWH4P5q1CGoSSH/i9hrXs7SlbRLkoq9IGuoPYNGQvDJ3pt/wmOM+XgYjIDRMVIdkUWt0RsfzF50JfnCw==
 
-"@sparknz/set-tokens@^0.0.18":
-  version "0.0.18"
-  resolved "https://registry.yarnpkg.com/@sparknz/set-tokens/-/set-tokens-0.0.18.tgz#5e1d2cac676a9bf42fa2047d51cbac4e4858b7b9"
-  integrity sha512-xkie3Yo52bQ6xcJakOZTHuc1bjujjHjBhQcxjrp/VrLBcw3tTqVbVwVZm7X1QaHoFpbC7fgyo5xncP1Zg96EBA==
+"@sparknz/set-tokens@^0.0.20":
+  version "0.0.20"
+  resolved "https://registry.yarnpkg.com/@sparknz/set-tokens/-/set-tokens-0.0.20.tgz#d1df97171c89eb39fbff5535a691c425d13c8e43"
+  integrity sha512-bD0sEkqFHMx9FOyfHXGYuCOvMJaaU5wGHgjDLshnQWTALgs1PzzecYMZ8qD7MVweb9OTgZEcItz5w+ib8q0RTA==
 
 abbrev@1:
   version "1.1.1"
