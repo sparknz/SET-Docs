@@ -1,2 +1,0 @@
-webpackJsonp([3],{802:function(e,n,t){var o=t(11),r=t(45),a=t(294).PageRenderer;a.__esModule&&(a=a.default);var c=r({displayName:"WrappedPageRenderer",getInitialState:function(){return{content:t(809)}},componentWillMount:function(){},render:function(){return o.createElement(a,Object.assign({},this.props,{content:this.state.content}))}});c.__catalog_loader__=!0,e.exports=c},809:function(e,n){e.exports="```table\nspan: 3\nrows: !import zIndex\n```"}});
-//# sourceMappingURL=3.902baf7c.chunk.js.map

@@ -1,0 +1,2 @@
+webpackJsonp([10],{800:function(e,t,n){var o=n(11),r=n(45),a=n(294).PageRenderer;a.__esModule&&(a=a.default);var c=r({displayName:"WrappedPageRenderer",getInitialState:function(){return{content:n(812)}},componentWillMount:function(){},render:function(){return o.createElement(a,Object.assign({},this.props,{content:this.state.content}))}});c.__catalog_loader__=!0,e.exports=c},812:function(e,t){e.exports="```color-palette\nspan: 3\ncolors: !import colors\n```"}});
+//# sourceMappingURL=10.2ce9c59f.chunk.js.map
