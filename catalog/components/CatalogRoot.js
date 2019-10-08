@@ -1,7 +1,7 @@
 import React from 'react';
 import { Catalog, pageLoader } from "catalog";
 
-import { getPropertyArray, getBgTextBorderColorArray } from '../helpers/color';
+import { getPropertyArray, getThemeColorArrays } from '../helpers/color';
 
 const loader = (page) =>
   pageLoader(() => import(`../docs/${page}.md`));
@@ -26,10 +26,28 @@ export default function CatalogRoot({ currentTheme, jsTheme }) {
           content: loader("color/base"),
         },
         {
-          path: "/color/theme",
-          title: "Theme Color",
-          imports: getBgTextBorderColorArray(currentTheme),
-          content: loader("color/theme"),
+          path: "/color/text",
+          title: "Text Color",
+          imports: { colorArray: getPropertyArray(currentTheme, 'color-text') },
+          content: loader("color/text"),
+        },
+        {
+          path: "/color/border",
+          title: "Border Color",
+          imports: { colorArray: getPropertyArray(currentTheme, 'color-border') },
+          content: loader("color/border"),
+        },
+        {
+          path: "/color/background",
+          title: "Background Color",
+          imports: { colorArray: getPropertyArray(currentTheme, 'color-background') },
+          content: loader("color/background"),
+        },
+        {
+          path: "/color/shadow",
+          title: "Shadow Color",
+          imports: { colorArray: getPropertyArray(currentTheme, 'color-shadow') },
+          content: loader("color/shadow"),
         }
       ]
     },
