@@ -8,7 +8,7 @@ export default function ThemeSelector({options, onChange, value}) {
             <select onChange={onChange} value={value}>
                 {
                     options.map(option => (
-                        <option value={option}>{option}</option>
+                        <option key={option} value={option}>{option}</option>
                     ))
                 }
             </select>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Catalog, pageLoader } from "catalog";
 
-import { getColorArray, getBgTextBorderColorArray } from '../helpers/color';
+import { getPropertyArray, getBgTextBorderColorArray } from '../helpers/color';
 
 const loader = (page) =>
   pageLoader(() => import(`../docs/${page}.md`));
@@ -22,7 +22,7 @@ export default function CatalogRoot({ currentTheme, jsTheme }) {
         {
           path: "/color/base",
           title: "Base Color",
-          imports: { colors: getColorArray(currentTheme, 'color-base') },
+          imports: { colors: getPropertyArray(currentTheme, 'color-base') },
           content: loader("color/base"),
         },
         {
@@ -39,13 +39,13 @@ export default function CatalogRoot({ currentTheme, jsTheme }) {
         {
           path: "/layout/breakpoint",
           title: "Breakpoint",
-          imports: { breakpoint: getColorArray(currentTheme, 'breakpoint') },
+          imports: { breakpoint: getPropertyArray(currentTheme, 'breakpoint') },
           content: loader("layout/breakpoint"),
         },
         {
           path: "/layout/z-index",
           title: "z-index",
-          imports: { zIndex: getColorArray(currentTheme, 'z-index') },
+          imports: { zIndex: getPropertyArray(currentTheme, 'z-index') },
           content: loader("layout/z-index"),
         }
       ]
@@ -56,14 +56,31 @@ export default function CatalogRoot({ currentTheme, jsTheme }) {
         {
           path: "/sizing/font",
           title: "Font",
-          imports: { font: getColorArray(currentTheme, 'font', 'label') },
+          imports: { font: getPropertyArray(currentTheme, 'font', 'label') },
           content: loader("sizing/font"),
         },
         {
           path: "/sizing/spacing",
           title: "Spacing",
-          imports: { spacing: getColorArray(currentTheme, 'spacing') },
+          imports: { spacing: getPropertyArray(currentTheme, 'spacing') },
           content: loader("sizing/spacing"),
+        },
+        {
+          path: "/sizing/radius",
+          title: "Border Radius",
+          imports: {  radiusArray: getPropertyArray(currentTheme, 'radius')},
+          content: loader("sizing/radius"),
+        },
+      ]
+    },
+    {
+      title: "Misc",
+      pages: [
+        {
+          path: "/misc/opcacity",
+          title: "Opacity",
+          imports: { opacityArray: getPropertyArray(currentTheme, 'opacity') },
+          content: loader("misc/opacity"),
         },
       ]
     }
