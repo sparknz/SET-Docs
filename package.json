@@ -4,7 +4,7 @@
   "main": "catalog/index.js",
   "homepage": "https://sparknz.github.io/SET-Docs",
   "dependencies": {
-    "@sparknz/set-tokens": "^0.0.22",
+    "@sparknz/set-tokens": "^0.0.25",
     "catalog": "^3.6.0",
     "gh-pages": "^2.1.1",
     "react": "^16.9.0",
