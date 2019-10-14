@@ -26,8 +26,6 @@ export default function App(){
         "Halloween": halloween_js
     }
 
-    console.log(themes);
-
     return (
         <div>
             <ThemeSelector onChange={e=>onThemeChange(e.target.value)} value={selectedTheme} options={Object.keys(themes)}/>
