@@ -1,2 +1,0 @@
-webpackJsonp([3],{807:function(e,n,t){var o=t(11),r=t(45),a=t(294).PageRenderer;a.__esModule&&(a=a.default);var i=r({displayName:"WrappedPageRenderer",getInitialState:function(){return{content:t(819)}},componentWillMount:function(){},render:function(){return o.createElement(a,Object.assign({},this.props,{content:this.state.content}))}});i.__catalog_loader__=!0,e.exports=i},819:function(e,n){e.exports='```type\n{\n"font": "sans-serif",\n"headings": !import font}\n```'}});
-//# sourceMappingURL=3.ae808d6b.chunk.js.map
