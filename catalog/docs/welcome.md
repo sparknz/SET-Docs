@@ -13,7 +13,7 @@ showSource: true
 ---
 <div
     style={{
-        padding: currentTheme.size.spacing.default.md, 
+        padding: currentTheme.size.spacing8, 
         backgroundColor: currentTheme.color.background.default.default,
     }}
 

@@ -4,10 +4,10 @@ export function getPropertyArray(colorObj, pickBy, keyLabel = "name") {
 
 export function getThemeColorArrays(themeObj) {
   const output = {
-      background: getPropertyArray(themeObj, 'color-background'),
-      text: getPropertyArray(themeObj, 'color-text'),
-      border: getPropertyArray(themeObj, 'color-border'),
-      shadow: getPropertyArray(themeObj, 'color-shadow'),
+      background: getPropertyArray(themeObj, 'color background'),
+      text: getPropertyArray(themeObj, 'color text'),
+      border: getPropertyArray(themeObj, 'color border'),
+      shadow: getPropertyArray(themeObj, 'color shadow'),
   }
   return output
 }

@@ -22,31 +22,31 @@ export default function CatalogRoot({ currentTheme, jsTheme }) {
         {
           path: "/color/base",
           title: "Base Color",
-          imports: { colors: getPropertyArray(currentTheme, 'color-base') },
+          imports: { colors: getPropertyArray(currentTheme, 'color base') },
           content: loader("color/base"),
         },
         {
           path: "/color/text",
           title: "Text Color",
-          imports: { colorArray: getPropertyArray(currentTheme, 'color-text') },
+          imports: { colorArray: getPropertyArray(currentTheme, 'color text') },
           content: loader("color/text"),
         },
         {
           path: "/color/border",
           title: "Border Color",
-          imports: { colorArray: getPropertyArray(currentTheme, 'color-border') },
+          imports: { colorArray: getPropertyArray(currentTheme, 'color border') },
           content: loader("color/border"),
         },
         {
           path: "/color/background",
           title: "Background Color",
-          imports: { colorArray: getPropertyArray(currentTheme, 'color-background') },
+          imports: { colorArray: getPropertyArray(currentTheme, 'color background') },
           content: loader("color/background"),
         },
         {
           path: "/color/shadow",
           title: "Shadow Color",
-          imports: { colorArray: getPropertyArray(currentTheme, 'color-shadow') },
+          imports: { colorArray: getPropertyArray(currentTheme, 'color shadow') },
           content: loader("color/shadow"),
         }
       ]
@@ -63,7 +63,7 @@ export default function CatalogRoot({ currentTheme, jsTheme }) {
         {
           path: "/layout/z-index",
           title: "z-index",
-          imports: { zIndex: getPropertyArray(currentTheme, 'z-index') },
+          imports: { zIndex: getPropertyArray(currentTheme, 'zIndex') },
           content: loader("layout/z-index"),
         }
       ]
@@ -76,6 +76,12 @@ export default function CatalogRoot({ currentTheme, jsTheme }) {
           title: "Font",
           imports: { font: getPropertyArray(currentTheme, 'font', 'label') },
           content: loader("sizing/font"),
+        },
+        {
+          path: "/sizing/line_height",
+          title: "Line Height",
+          imports: { line_height: getPropertyArray(currentTheme, 'line_height', 'label') },
+          content: loader("sizing/line_height"),
         },
         {
           path: "/sizing/spacing",
@@ -99,6 +105,12 @@ export default function CatalogRoot({ currentTheme, jsTheme }) {
           title: "Opacity",
           imports: { opacityArray: getPropertyArray(currentTheme, 'opacity') },
           content: loader("misc/opacity"),
+        },
+        {
+          path: "/misc/duration",
+          title: "Duration",
+          imports: { duration: getPropertyArray(currentTheme, 'duration') },
+          content: loader("misc/duration"),
         },
       ]
     }

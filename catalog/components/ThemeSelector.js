@@ -17,11 +17,13 @@ export default function ThemeSelector({options, onChange, value}) {
 }
 
 const Wrapper = styled.div`
+    position: absolute;
+    z-index: 9000;
     display:flex;
     padding: 32px;
     justify-content: flex-end;
 `
 
 const Label = styled.label`
-    margin-right: 24px;
+    margin-right: 8px;
 `
