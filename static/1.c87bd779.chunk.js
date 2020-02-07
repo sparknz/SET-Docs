@@ -1,0 +1,2 @@
+webpackJsonp([1],{809:function(e,n,t){var a=t(11),o=t(45),r=t(294).PageRenderer;r.__esModule&&(r=r.default);var c=o({displayName:"WrappedPageRenderer",getInitialState:function(){return{content:t(823)}},componentWillMount:function(){},render:function(){return a.createElement(r,Object.assign({},this.props,{content:this.state.content}))}});c.__catalog_loader__=!0,e.exports=c},823:function(e,n){e.exports="```table\nspan: 3\nrows: !import spacing\n```"}});
+//# sourceMappingURL=1.c87bd779.chunk.js.map
